@@ -33,6 +33,35 @@ public class Main {
 		
 		myCalculator.addition();
 
+		// ======================================================================================
+		System.out.println("==============================================");
+		
+		//StudentInfo studentInfo1 = new StudentInfo();
+		//StudentDto studentDto1 = new StudentDto();
+		//studentDto1.setName("홍길동");
+		//studentDto1.setAge(17);
+		//studentDto1.setGradeNum("4");
+		//studentDto1.setClassNum("5");
+		
+		//StudentInfo studentInfo2 = new StudentInfo();
+		//StudentDto studentDto2 = new StudentDto();
+		//studentDto2.setName("이순신");
+		//studentDto2.setAge(20);
+		//studentDto2.setGradeNum("3");
+		//studentDto2.setClassNum("7");
+		
+		
+		//studentInfo1.setStudentDto(studentDto1);
+		//studentInfo1.printStudentInfo();
+		//studentInfo2.setStudentDto(studentDto2);
+		//studentInfo2.printStudentInfo();
+		
+		
+		StudentInfo studentInfo1 = ctx.getBean("studentInfo1", StudentInfo.class);
+		studentInfo1.printStudentInfo();
+		
+		StudentInfo studentInfo2 = ctx.getBean("studentInfo2", StudentInfo.class);
+		studentInfo2.printStudentInfo();
 	}
 
 }
